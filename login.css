@@ -1,0 +1,71 @@
+/* *{
+    margin: 0%;
+    padding: 0%;
+} */
+body{
+    margin: 100px;
+    background-image: linear-gradient(rgb(0,0,0,0.7),rgba(0, 0, 0, 0.335)), url(/pexels-barbara-wyrowińska-2971245.jpg);
+    /* background-image: linear-gradient(rgb 0,0,0.7); */
+    /* backface-visibility: hidden; */
+    /* background-size: cover; */
+    background-size:cover;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* opacity: 50%; */
+
+}
+form{
+    margin-top: 200px;
+    padding-top: 65px;
+    border-style: solid;
+    border-top-left-radius: 400px;
+    border-bottom-right-radius: 400px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-color: wheat;
+    height: 280px; width: 520px;
+    background-color: rgba(110, 64, 0, 0.66);
+    box-shadow:
+    0 1px 7px wheat,
+    0 2px 7px hsla(250, 70%, 5%, 0.3) inset,
+    0 2px 6px hsla(0, 0%, 100%, 0.25);
+    /* background-image: linear-gradient(violet,blue); */
+    /* text-justify: auto;
+    border-color: black; */
+    /* border-radius: 70px; */
+    /* border-width: thin;
+    border-block-start-color: blueviolet;
+    border-block-end-color: blue;
+    border-left-color: blueviolet;
+    border-right-color: blue; */
+}
+/* form.hover{
+    transition-duration: 5ms;
+    
+} */
+.username{
+    border-radius: 20px;
+    border-width: 0px;
+    width: 250px;
+    height: 30px;
+    font-weight: lighter;
+}
+.pass{
+    border-radius: 20px;
+    border-width: 0px;
+    width: 250px;
+    height: 30px;
+    font-weight: lighter;
+}
+.log{
+    border-radius: 20px;
+    border-width: 0px;
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+}
+/* form:hover{
+    background-color: rgba(0, 0, 255, 0.203);
+    
+} */

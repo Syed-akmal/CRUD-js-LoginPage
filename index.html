@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        labour
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script>
+        function cal(form){
+            var a=document.getElementById("salary");
+            var b=document.getElementById("days");
+            var total=a*b;
+            document.getElementById("ts")=total
+
+        }
+    </script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+
+<body>
+    <p>
+        <input type="button" value="Create PDF" 
+            id="btPrint" onclick="createPDF()" />
+    </p>
+    <div id="pd">
+        <table style="width:100% ;">
+            <tr>
+                <td>
+                    <form onsubmit="fun(); event.preventDefault();onFormSubmit(); addProduct" autocomplete="off" st>
+                        <div>
+                            <label>Date</label><label class="date" id="date"></label>
+                            <input type="date" name="" id="dat">
+                        </div> <br>
+                        <div>
+                            <label>Employee Name</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                            <input type="text" name="" id="fullName">
+                        </div>
+                        <div>
+                            <label>Salary/day</label>
+                            <input type="number" name="" id="salary" required>
+                        </div>
+                        <div>
+                            <label>Days</label>
+                            <input type="number" name="" id="days" >
+                        </div>
+                        <div>
+                            <label>Total Salary</label>
+                            <input type="number" name="" id="ts" >
+                        </div>
+                        <div>
+                            <label>Advance</label>
+                            <input type="number" name="" id="adv">
+                        </div>
+                        <div>
+                            <label>Balance</label>
+                            <input type="number" name="" id="bal">
+                        </div>
+                        <div  class="form-action-buttons">
+                            <input type="submit" value="Submit" >
+                        </div>
+                    </form>
+                
+                </td>
+                <div id="paf">
+                <td id="123">
+                    <table class="list" id="employeeList">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Name</th>
+                                <th>Salary/day</th>
+                                <th>Days</th>
+                                <th>Total Salary</th>
+                                <th>Advance</th>
+                                <th>Balance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+    
+                        </tbody>
+                    </table>
+                </td>
+        </tr>
+    </table>
+                </div>
+    </div>
+    
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
